@@ -12,9 +12,9 @@
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
   <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.0" minWidth="100.0" prefWidth="199.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="100.0" prefWidth="198.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="100.0" prefWidth="183.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.0" minWidth="100.0" prefWidth="191.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="100.0" prefWidth="217.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="100.0" prefWidth="191.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
@@ -38,22 +38,22 @@
             <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="newGameBtn" mnemonicParsing="false" onAction="#newGame" prefHeight="50.0" prefWidth="225.0" text="New Game">
+            <Button fx:id="newGameBtn" mnemonicParsing="false" onAction="#newGame" prefHeight="50.0" prefWidth="225.0" stylesheets="@Main.css" text="New Game">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" text="Continue" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" stylesheets="@Main.css" text="Continue" GridPane.rowIndex="1">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" text="High Scores" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" stylesheets="@Main.css" text="High Scores" GridPane.rowIndex="2">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" text="Exit Game" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" stylesheets="@Main.css" text="Exit Game" GridPane.rowIndex="3">
                <font>
                   <Font size="27.0" />
                </font>

@@ -1,0 +1,13 @@
+.button{
+  //-fx-background-color: rgba(150,190,150,1);
+  //-fx-text-fill: white;
+}
+.button:hover{
+  //-fx-background-color: rgba(200, 200, 70, .8);
+}
+.face{
+
+}
+.suits{
+
+}

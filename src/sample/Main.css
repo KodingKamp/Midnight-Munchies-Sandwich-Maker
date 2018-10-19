@@ -1,0 +1,10 @@
+.button{
+  //-fx-background-color: rgba(130,170,130,1);
+  //-fx-text-fill: white;
+}
+.button:hover{
+  //-fx-background-color: rgba(200, 200, 70, .8);
+  //-fx-border-color: white;
+  //-fx-border-radius: 5px;
+  //-fx-font-style: italic;
+}

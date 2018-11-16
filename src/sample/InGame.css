@@ -11,3 +11,8 @@
 .suits{
 
 }
+#startBtn{
+  -fx-background-color: grey;
+  -fx-text-fill: white;
+
+}

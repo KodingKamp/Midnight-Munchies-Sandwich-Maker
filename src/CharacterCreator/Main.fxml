@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CharacterCreator.MainController">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="251.0" layoutY="75.0" prefHeight="251.0" prefWidth="287.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="250.0" minHeight="0.0" prefHeight="85.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="85.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="88.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="headBox" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@bodyParts/h0.png" />
+               </image></ImageView>
+            <Button fx:id="headBackBtn" mnemonicParsing="false" onAction="#changeHeadBack" styleClass="btn" stylesheets="@Main.css" text="&lt;" />
+            <Button fx:id="headNextBtn" mnemonicParsing="false" onAction="#changeHeadNext" styleClass="btn" stylesheets="@Main.css" text="&gt;" GridPane.halignment="RIGHT" />
+            <Button fx:id="bodyBackBtn" mnemonicParsing="false" onAction="#changeTorsoBack" styleClass="btn" stylesheets="@Main.css" text="&lt;" GridPane.rowIndex="1" />
+            <Button fx:id="bodyNextBtn" mnemonicParsing="false" onAction="#changeTorsoNext" styleClass="btn" stylesheets="@Main.css" text="&gt;" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Button fx:id="legBackBtn" mnemonicParsing="false" onAction="#changeLegBack" styleClass="btn" stylesheets="@Main.css" text="&lt;" GridPane.rowIndex="2" />
+            <Button fx:id="legNextBtn" mnemonicParsing="false" onAction="#changeLegNext" styleClass="btn" stylesheets="@Main.css" text="&gt;" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <ImageView fx:id="bodyBox" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@bodyParts/b0.png" />
+               </image></ImageView>
+            <ImageView fx:id="legBox" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@bodyParts/l0.png" />
+               </image></ImageView>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="400.0" prefWidth="196.0" style="-fx-background-color: darkgrey;">
+         <children>
+            <Label layoutX="17.0" layoutY="14.0" text="Character Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameVar" layoutX="14.0" layoutY="51.0" prefHeight="31.0" prefWidth="169.0" />
+            <Button fx:id="saveBtn" layoutX="13.0" layoutY="106.0" mnemonicParsing="false" styleClass="asideBtn" stylesheets="@Main.css" text="Save">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="backBtn" layoutX="13.0" layoutY="279.0" mnemonicParsing="false" styleClass="asideBtn" stylesheets="@Main.css" text="Back">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Button layoutX="66.0" layoutY="231.0" mnemonicParsing="false" onAction="#connect" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

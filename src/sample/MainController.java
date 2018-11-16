@@ -10,17 +10,22 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class MainController {
-  private int cardIndexCounter = 0;
-  private Player you = new Player("You");
-  private Player opponent = new Player("Opponent");
+
+  private static Player you = new Player("You");
+  private static Player opponent = new Player("Opponent");
   private ArrayList<Card> preGameDeck;
 
-  public Player getYou() {
+  public static Player getYou() {
     return you;
   }
 
-  public Player getOpponent() {
+  public static Player getOpponent() {
     return opponent;
+  }
+
+  @FXML
+  public void viewHighScore(){
+
   }
 
   public void continueGame(){
@@ -63,6 +68,13 @@ public class MainController {
         opponent.addCard(preGameDeck.get(i));
       }
     }
+
+    // ~~~Debugging~~~ REMOVE AFTER FINISHED
+    // Last Card
+//    you.clearDeck();
+//    opponent.clearDeck();
+//    you.addCard(new Card("10", "Hearts", 9));
+//    opponent.addCard(new Card("9", "Spades", 8));
 
     // Testing shuffling of deck.
     you.printDeck();

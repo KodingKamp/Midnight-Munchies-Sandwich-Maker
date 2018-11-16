@@ -19,8 +19,8 @@ public class Player {
     deck.remove(0);
   }
 
-  public Card getCard() {
-    return deck.get(0);
+  public Card getCard(int x) {
+    return deck.get(x);
   }
 
   public int getDeckSize() {

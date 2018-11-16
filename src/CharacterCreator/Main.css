@@ -1,0 +1,9 @@
+.btn{
+  -fx-background-color: none;
+  -fx-text-fill: grey;
+  -fx-font-size: 30px;
+}
+.asideBtn{
+  -fx-text-fill: white;
+  -fx-background-color: grey;
+}

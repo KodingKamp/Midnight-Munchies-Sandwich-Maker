@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,13 +14,12 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InGameController">
+<AnchorPane cacheShape="false" centerShape="false" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="400.0" prefWidth="600.0" scaleShape="false" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InGameController">
    <children>
       <GridPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="100.0" prefWidth="191.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="100.0" prefWidth="217.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="100.0" prefWidth="191.0" />
          </columnConstraints>
          <rowConstraints>
@@ -51,12 +52,17 @@
             <Rectangle fx:id="diamond1" arcHeight="5.0" arcWidth="5.0" fill="#bbbbbb" height="102.0" rotate="45.0" stroke="WHITE" strokeType="INSIDE" width="99.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
             <Label text="You" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
             <Label text="Opponent" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
-            <Button id="dealBtn" fx:id="dealBtn" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#deal" prefHeight="71.0" prefWidth="216.0" stylesheets="@InGame.css" text="Deal" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button id="dealBtn" fx:id="dealBtn" alignment="CENTER" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#deal" prefHeight="80.0" prefWidth="180.0" stylesheets="@InGame.css" text="Deal Next!" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="27.0" />
                </font>
             </Button>
-            <Label fx:id="cardFace0" styleClass="face" stylesheets="@InGame.css" text="A" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button id="startBtn" fx:id="startBtn" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#start" prefHeight="80.0" prefWidth="180.0" stylesheets="@InGame.css" text="Start Game!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label fx:id="cardFace0" styleClass="face" stylesheets="@InGame.css" text="Card" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <GridPane.margin>
                   <Insets top="30.0" />
                </GridPane.margin>
@@ -64,20 +70,20 @@
                   <Font size="50.0" />
                </font>
             </Label>
-            <Label fx:id="cardOf0" text="of" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label fx:id="cardOf0" text="Face" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Label fx:id="cardSuit0" styleClass="suits" stylesheets="@InGame.css" text="Hearts" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="cardSuit0" styleClass="suits" stylesheets="@InGame.css" text="Off!" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <font>
-                  <Font size="45.0" />
+                  <Font size="40.0" />
                </font>
                <GridPane.margin>
                   <Insets bottom="30.0" />
                </GridPane.margin>
             </Label>
-            <Label fx:id="cardFace1" styleClass="face" stylesheets="@InGame.css" text="A" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Label fx:id="cardFace1" styleClass="face" stylesheets="@InGame.css" text="Card" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="50.0" />
                </font>
@@ -85,20 +91,46 @@
                   <Insets top="30.0" />
                </GridPane.margin>
             </Label>
-            <Label fx:id="cardOf1" text="of" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label fx:id="cardOf1" text="Face" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Label fx:id="cardSuit1" styleClass="suits" stylesheets="@InGame.css" text="Hearts" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label fx:id="cardSuit1" styleClass="suits" stylesheets="@InGame.css" text="Off!" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <font>
-                  <Font size="45.0" />
+                  <Font size="40.0" />
                </font>
                <GridPane.margin>
                   <Insets bottom="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Deck Size" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Deck Size" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="deckSize0" alignment="CENTER_RIGHT" text="26" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets right="40.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="deckSize1" alignment="CENTER_RIGHT" text="26" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets right="40.0" />
                </GridPane.margin>
             </Label>
          </children>
       </GridPane>
    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <Reflection fraction="0.45" topOpacity="0.06" />
+   </effect>
 </AnchorPane>

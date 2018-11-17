@@ -1,0 +1,59 @@
+#MainPane{
+  -fx-background-image: url("../images/Marble.jpg");
+  -fx-background-size: 100%;
+  -fx-background-position: center center;
+}
+.gridPaneContainer{
+  -fx-background-size: 200%;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+  -fx-border-color: white;
+  -fx-border-width: 2px;
+  -fx-background-color: rgba(100, 100, 100, .4);
+}
+.MainMenuBtn{
+  -fx-min-width: 200px;
+  -fx-min-height: 60px;
+  -fx-background-radius: 30;
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-border-width: 1px;
+  -fx-border-color: white;
+  -fx-border-radius: 30;
+  -fx-font-family: "Bodoni MT Black";
+  -fx-font-size: 20px;
+}
+#descriptionBox{
+  -fx-background-color: rgba(50, 50, 50, .4);
+  -fx-background-radius: 30;
+}
+.MainMenuBtn:hover, .loadBtn:hover{
+  -fx-text-fill: cyan;
+  -fx-border-color: cyan;
+  -fx-background-color: #444444;
+}
+#Credits *.text{
+  -fx-text-alignment: center;
+}
+.loadBtn{
+  -fx-min-width: 40px;
+  -fx-min-height: 40px;
+  -fx-background-radius: 30;
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-border-width: 1px;
+  -fx-border-color: white;
+  -fx-border-radius: 30;
+  -fx-font-family: "Bodoni MT Black";
+}
+#deleteBtn{
+  -fx-background-radius: 30;
+  -fx-background-color: red;
+  -fx-border-width: 1px;
+  -fx-border-color: white;
+  -fx-border-radius: 30;
+}
+#deleteBtn:hover{
+  -fx-background-color: black;
+  -fx-text-fill: red;
+}

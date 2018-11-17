@@ -17,16 +17,19 @@ import javafx.stage.Stage;
 // Controller class for the Create Sandwich Scene
 public class CreateSceneController {
 
+  //------- Variable Declaration and Initialization -------
+  // Index Variables to use with URL String Arrays.
   private int topIndex = 0;
   private int midIndex = 0;
   private int bottomIndex = 0;
   // Arrays to hold url of each image
   private String[] topImgArray = {"BunTop.png", "Bread.png", "Poptart.png", "Pizza.png",
       "None.png"};
-  private String[] midImgArray = {"Patty.png", "Hotdog.png", "Pizza.png", "Sponge.png", "None.png"};
+  private String[] midImgArray = {"Patty.png", "Hotdog.png", "Pizza.png", "Sponge.png",
+      "None.png"};
   private String[] bottomImgArray = {"BunBottom.png", "Bread.png", "Poptart.png", "Pizza.png",
       "None.png"};
-  // Arrays to hold description strings for each image
+  // Arrays to hold description strings for each respective image
   private String[] topLabelDescription = {"Top Burger Bun w/ Sesame Seeds",
       "Non-Toasted Bread Slice",
       "Strawberry Filled Poptart", "Pepperoni Pizza Slice", "Bunless?"};
@@ -70,42 +73,36 @@ public class CreateSceneController {
   //  respective to the index of the urlArrays
   @FXML
   public void bottomNextBtnClicked() {
-    // System.out.println("Next Bottom Option");
     bottomIndex = (bottomIndex + 1) % bottomImgArray.length;
     setBottomImages();
   }
 
   @FXML
   public void bottomPreviousBtnClicked() {
-    // System.out.println("Previous Bottom Option");
     bottomIndex = (bottomIndex + bottomImgArray.length - 1) % bottomImgArray.length;
     setBottomImages();
   }
 
   @FXML
   public void midNextBtnClicked() {
-    // System.out.println("Next Middle Option");
     midIndex = (midIndex + 1) % midImgArray.length;
     setMidImages();
   }
 
   @FXML
   public void midPreviousBtnClicked() {
-    // System.out.println("Previous Middle Option");
     midIndex = (midIndex + midImgArray.length - 1) % midImgArray.length;
     setMidImages();
   }
 
   @FXML
   public void topNextBtnClicked() {
-    // System.out.println("Next Top Option");
     topIndex = (topIndex + 1) % topImgArray.length;
     setTopImages();
   }
 
   @FXML
   public void topPreviousBtnClicked() {
-    // System.out.println("Previous Top Option");
     topIndex = (topIndex + topImgArray.length - 1) % topImgArray.length;
     setTopImages();
   }
@@ -116,11 +113,15 @@ public class CreateSceneController {
     cheesePreviewImage.setVisible(cheeseCheckBox.isSelected());
   }
 
-  // Method to store currently displayed sandwich image combination and
-  // name variable to the SANDWICHES database, alert user if name field is empty
-  // or attempts to us an apostrophe.
+  /*
+   * Method to store currently displayed sandwich image combination and
+   * name variable to the SANDWICHES database, alert user if name field is empty
+   * or attempts to us an apostrophe.
+   */
   @FXML
   public void saveBtnClicked() {
+    // If user tries to save with an empty name field or only have white spaces,
+    // alerts user to provide characters in name field and clears name field.
     if (nameField.getText().equals("") || nameField.getText().isEmpty()
         || nameField.getText().matches("\\s+")) {
       Alert alert = new Alert(AlertType.ERROR);
@@ -132,12 +133,15 @@ public class CreateSceneController {
       // contain whitespace before it.
       nameField.setText("");
     } else if (nameField.getText().contains("'")) {
+      // Apostrophes are used in SQL statements so alerts user to remove them from the name field.
       Alert alert = new Alert(AlertType.ERROR);
       alert.setTitle("Apostrophe");
       alert.setHeaderText("Apostrophe Error");
       alert.setContentText("Please refrain from using an apostrophe ( ' ) in the name.");
       alert.showAndWait();
     } else {
+      // Executes SQL statement to insert a records into the Database's Sandwiches Table
+      // and alerts user of its successful execution.
       DataBase.executeQuery("INSERT INTO SANDWICHES (NAME, TOPINDEX, MIDINDEX, "
           + "BOTTOMINDEX, CHEESE) VALUES ('" + nameField.getText() + "', " + topIndex + ", "
           + midIndex + ", " + bottomIndex + ", " + cheeseCheckBox.isSelected() + ")");
@@ -147,10 +151,12 @@ public class CreateSceneController {
       alert.setContentText("Your sandwich combination has been successfully saved to your virtual"
           + "storage.\n\nClick load in the Main Menu to view your saved creations!");
       alert.showAndWait();
+      System.out.println("Adding sandwich \"" + nameField.getText() + "\".");
     }
   }
 
-  // Method that resets all fields, labels, variables and images to default
+  // Method that resets all fields, labels, variables and images to default and called when reset
+  // button is clicked.
   @FXML
   public void resetBtnClicked() {
     bottomIndex = 0;
@@ -162,7 +168,9 @@ public class CreateSceneController {
     nameField.setText("");
   }
 
-  // Method used to switch the scene to Main Menu scene
+  // Method used to change the scene to the Main scene and called
+  // when Main Menu button is clicked. Grabs stage with Main's get method
+  // and creates a new scene in this stage.
   @FXML
   public void mainMenuBtnClicked() throws IOException {
     Stage stage = Main.getPrimaryStage();
@@ -171,8 +179,8 @@ public class CreateSceneController {
     stage.show();
   }
 
-  // Method to set the Top Menu Image, Top Preview Image,
-  //  // and the Top Menu Label to the corresponding index value
+  // Method to set the Top Menu Image, Top Preview Image, and the
+  // Top Menu Label using the Image URL arrays and the respective index values.
   @FXML
   private void setTopImages() {
     topPreviewImage.setImage(new Image("/images/"
@@ -194,7 +202,7 @@ public class CreateSceneController {
   }
 
   // Method to set the Bottom Menu Image, Bottom Preview Image,
-  //  // and the Bottom Menu Label to the corresponding index value
+  // and the Bottom Menu Label to the corresponding index value
   @FXML
   private void setBottomImages() {
     bottomPreviewImage.setImage(new Image("/images/"

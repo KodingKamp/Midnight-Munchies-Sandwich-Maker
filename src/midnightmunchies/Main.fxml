@@ -123,12 +123,12 @@
                         <Insets />
                      </GridPane.margin>
                   </ImageView>
-                  <Button fx:id="loadPreviousBtn" mnemonicParsing="false" onAction="#loadPreviousBtnClicked" styleClass="loadBtn" stylesheets="@Main.css" text="&lt;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                  <Button fx:id="loadPreviousBtn" mnemonicParsing="false" onAction="#loadPrevious" styleClass="loadBtn" stylesheets="@Main.css" text="&lt;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets bottom="20.0" right="120.0" />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="loadNextBtn" mnemonicParsing="false" onAction="#loadNextBtnClicked" styleClass="loadBtn" stylesheets="@Main.css" text="&gt;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                  <Button fx:id="loadNextBtn" mnemonicParsing="false" onAction="#loadNext" styleClass="loadBtn" stylesheets="@Main.css" text="&gt;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets bottom="20.0" left="120.0" />
                      </GridPane.margin>

@@ -2,134 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Pre-Documentation, Code Complete.&#10;Includes:&#10;Create a record in Database&#10;Read from Database SELECT&#10;Update a Database UPDATE&#10;Delete a record from a Database&#10;SQL WHERE&#10;Buttons&#10;CheckBox&#10;ImageView&#10;Label&#10;TextArea&#10;TextField&#10;CSS&#10;CSS &gt; 10 Styles">
-      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/storage/db.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/storage/log/log.ctrl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/storage/log/logmirror.ctrl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/midnightmunchies/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/log/log.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/log/logmirror.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c180.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c191.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c191.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1c0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1c0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1d1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1d1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1e0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c1f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c1f1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c200.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c211.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c221.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c260.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c260.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c271.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c271.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c281.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c281.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c290.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c290.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2c1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2d0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2e1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c2f0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c2f0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c300.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c300.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c311.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c311.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c321.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c321.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c331.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c331.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c340.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c340.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c351.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c351.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c361.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c361.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c371.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c371.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c380.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c391.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3c0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3c0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3d1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3d1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3e1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c3f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c3f1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c411.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c421.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c430.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c430.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c441.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c441.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c451.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c451.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c461.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c461.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c470.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c470.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c481.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c481.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/cc0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/cc0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/cd1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/cd1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/ce1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/ce1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/books/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib/storage/service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c490.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4b0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c4f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projectOOP/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projectOOP/sample/Main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projectOOP/sample/Main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projectOOP/sample/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/Main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/Main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/b0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/b1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/b2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/h0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/h1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/h2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/l0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/l1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CharacterCreator/bodyParts/l2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/CreateScene.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/CreateScene.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/CreateScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/CreateScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/CreateSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/CreateSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/LoadScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Card.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InGame.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InGame.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InGameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c490.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4b0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/books/seg0/c4f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c150.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c161.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c171.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c180.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c191.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c191.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1c0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1c0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1d1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1d1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1e0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c1f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c1f1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c200.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c211.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c221.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c251.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c260.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c260.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c271.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c271.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c281.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c281.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c290.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c290.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2c1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2d0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2e1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c2f0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c2f0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c300.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c300.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c311.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c311.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c321.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c321.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c331.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c331.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c340.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c340.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c351.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c351.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c361.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c361.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c371.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c371.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c380.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c391.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3c0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3c0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3d1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3d1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3e1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c3f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c3f1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c400.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c411.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c421.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c430.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c430.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c441.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c441.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c451.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c451.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c461.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c461.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c470.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c470.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c481.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c481.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/cc0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/cc0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/cd1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/cd1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/ce1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/ce1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/storage/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib/books/service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/Main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MidnightMunchies/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/midnightmunchies/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/midnightmunchies/DataBase.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -164,16 +126,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="storage" type="feb32156:DbDataSourceImpl" />
+        <item name="books" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="storage" type="feb32156:DbDataSourceImpl" />
+        <item name="books" type="feb32156:DbDataSourceImpl" />
         <item name="DEITEL: schema" type="6aa84934:DerbyImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="storage" type="feb32156:DbDataSourceImpl" />
+        <item name="books" type="feb32156:DbDataSourceImpl" />
         <item name="DEITEL: schema" type="6aa84934:DerbyImplModel$Schema" />
         <item name="SANDWICHES: table" type="3b012a07:DerbyImplModel$Table" />
       </path>
@@ -245,7 +207,7 @@
           <entry key="css" value="2650" />
           <entry key="dummy" value="28" />
           <entry key="fxml" value="162" />
-          <entry key="java" value="18439" />
+          <entry key="java" value="18444" />
           <entry key="sql" value="151" />
           <entry key="txt" value="603" />
         </counts>
@@ -253,7 +215,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2650" />
-          <entry key="JAVA" value="18439" />
+          <entry key="JAVA" value="18444" />
           <entry key="PLAIN_TEXT" value="631" />
           <entry key="SQL" value="151" />
           <entry key="Scratch" value="758" />
@@ -271,10 +233,10 @@
           <entry key="SANDWICHES" value="25" />
           <entry key="SQL181017090909590" value="1" />
           <entry key="TITLES" value="2" />
-          <entry key="css" value="18" />
+          <entry key="css" value="19" />
           <entry key="dat" value="2" />
           <entry key="fxml" value="19" />
-          <entry key="java" value="106" />
+          <entry key="java" value="107" />
           <entry key="log" value="1" />
           <entry key="png" value="12" />
           <entry key="sql" value="2" />
@@ -283,10 +245,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="18" />
+          <entry key="CSS" value="19" />
           <entry key="Database Element" value="46" />
           <entry key="Image" value="12" />
-          <entry key="JAVA" value="106" />
+          <entry key="JAVA" value="107" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="1" />
@@ -304,7 +266,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="521">
               <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -316,34 +278,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/midnightmunchies/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+            <state relative-caret-position="289">
+              <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/midnightmunchies/DataBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/storage/seg0/c121.dat">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/storage/seg0/c230.dat">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -351,6 +291,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
               <caret line="140" selection-start-line="140" selection-end-line="140" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/midnightmunchies/DataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -459,6 +411,11 @@
             <path>
               <item name="projectOOP" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectOOP" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectOOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectOOP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -485,7 +442,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542443737009" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542444284911" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/books" />
@@ -669,7 +626,7 @@
       <workItem from="1541778015080" duration="4209000" />
       <workItem from="1541975482109" duration="3865000" />
       <workItem from="1542139657280" duration="5996000" />
-      <workItem from="1542254574807" duration="62409000" />
+      <workItem from="1542254574807" duration="62521000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1539884809427</created>
@@ -710,13 +667,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136448000" />
+    <option name="totallyTimeSpent" value="136560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18120806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18120806" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -737,7 +694,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Terminal" order="15" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="16" weight="0.32907802" />
@@ -892,10 +849,10 @@
     <entry file="file://$PROJECT_DIR$/derby.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/storage/seg0/README_DO_NOT_TOUCH_FILES.txt">
+    <entry file="file://$PROJECT_DIR$/lib/books/seg0/README_DO_NOT_TOUCH_FILES.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/storage/README_DO_NOT_TOUCH_FILES.txt">
+    <entry file="file://$PROJECT_DIR$/lib/books/README_DO_NOT_TOUCH_FILES.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://DATABASE/5d53c340-6333-4e7a-9afd-9116029e6079.TABLE:DEITEL.AUTHORISBN">
@@ -1133,13 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/midnightmunchies/CreateSceneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1157,15 +1107,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.java">
+    <entry file="file://$PROJECT_DIR$/lib/books/seg0/c230.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-          </folding>
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1176,21 +1124,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/books/seg0/c121.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/midnightmunchies/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/midnightmunchies/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="69" column="28" lean-forward="true" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/storage/seg0/c121.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/storage/seg0/c230.dat">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

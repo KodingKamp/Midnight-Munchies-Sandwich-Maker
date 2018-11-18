@@ -72,12 +72,12 @@
                   </Button>
                </children>
             </GridPane>
-            <Label text="Midnight Munchies: Sandwich Maker" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+            <Label text="Midnight Munchies" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <GridPane.margin>
-                  <Insets />
+                  <Insets bottom="2.0" />
                </GridPane.margin>
                <font>
-                  <Font name="Bodoni MT Black" size="50.0" />
+                  <Font name="Bodoni MT Black" size="22.0" />
                </font>
             </Label>
             <ScrollPane fx:id="creditsPane" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -92,7 +92,7 @@
                   </TextArea>
                </content>
             </ScrollPane>
-            <Label text="2018 Kamp Duong" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label text="2018, Kamp Duong" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
             <GridPane fx:id="loadWindow" prefHeight="430.0" prefWidth="290.0" styleClass="gridPaneContainer" stylesheets="@Main.css" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -159,6 +159,11 @@
                   <Insets right="30.0" />
                </GridPane.margin>
             </GridPane>
+            <Label text="Sandwich Maker" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Bodoni MT Black" size="40.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
    </children>

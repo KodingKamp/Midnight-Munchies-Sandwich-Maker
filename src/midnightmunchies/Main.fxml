@@ -72,7 +72,7 @@
                   </Button>
                </children>
             </GridPane>
-            <Label text="Midnight Munchies" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+            <Label text="Midnight Munchies: Sandwich Maker" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>

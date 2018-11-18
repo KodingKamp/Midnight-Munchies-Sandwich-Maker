@@ -27,7 +27,8 @@ The database is created through Apache's embedded Derby database driver and has 
   <li>an Integer BOTTOMINDEX</li>
   <li>a Boolean CHEESE.</li>
 </ul>
-The NAME field holds a string representing the name of the record. The TOPINDEX, MIDINDEX and BOTTOMINDEX fields holds integers that represent the index of respective arrays that store the url of associated food items. Finally, the CHEESE field holds a boolean the represents where the user's creation contains the cheese item. The database diagram 
+The NAME field holds a string representing the name of the record. The TOPINDEX, MIDINDEX and BOTTOMINDEX fields holds integers that represent the index of respective arrays that store the url of associated food items. Finally, the CHEESE field holds a boolean the represents where the user's creation contains the cheese item. A database diagram is shown below.
+<br>
 <br>
 <img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/Database_Diagram.PNG" />
 <br>

@@ -15,7 +15,7 @@ Users shall be able to:
 </ul>
 Anytime during sandwich creation, users shall also be able to reset all the options to their default settings.
 <h2>DataBase</h2>
-The database used in this program has one table named SANDWICHES that has 5 fields:
+The database is created through Apache's embedded Derby database driver and has one table named SANDWICHES that has 5 fields:
 <ul>
   <li>A VarChar NAME</li>
   <li>an Integer TOPINDEX</li>
@@ -24,7 +24,7 @@ The database used in this program has one table named SANDWICHES that has 5 fiel
   <li>a Boolean CHEESE.</li>
 </ul>
 The NAME field holds a string representing the name of the record. The TOPINDEX, MIDINDEX and BOTTOMINDEX fields holds integers that represent the index of respective arrays that store the url of associated food items. Finally, the CHEESE field holds a boolean the represents where the user's creation contains the cheese item. The database diagram 
-<img src="projectOOP/Database_Diagram.PNG">
+<img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/Database_Diagram.PNG">
 <br>
 <hr />
 <h2>GUI Design Principles</h3>

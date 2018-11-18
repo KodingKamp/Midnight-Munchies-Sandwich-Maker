@@ -1,7 +1,11 @@
 # Midnight Munchies: Sandwich Maker - GUI Database Project for OOP Class
-<img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/MidnightMunchiesSandwichMaker.gif" />
-This Java based application shall allow users to create, view, edit, and delete customized sandwich options.
+<h2>Description</h2>
+Do you get midnight cravings but never know what snack to make? With Sandwich Maker, you won't have to spend an hour digging through your cabinets to find the perfect combination of foods that would satisfy your hunger. Create AWESOME almost realistic virtual sandwiches out of products you probably have in your kitchen. You'll be able to save your favored creations for later review; make sure you give it an awesome name!"
 
+<h2>Overview</h2>
+<img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/MidnightMunchiesSandwichMaker.gif" />
+<br>
+This Java based application shall allow users to create, view, edit, and delete customized sandwich options.<br>
 Users shall be able to:
 <ul>
   <li>select different bread options for the top and bottom bun individually,</li>
@@ -24,6 +28,7 @@ The database is created through Apache's embedded Derby database driver and has 
   <li>a Boolean CHEESE.</li>
 </ul>
 The NAME field holds a string representing the name of the record. The TOPINDEX, MIDINDEX and BOTTOMINDEX fields holds integers that represent the index of respective arrays that store the url of associated food items. Finally, the CHEESE field holds a boolean the represents where the user's creation contains the cheese item. The database diagram 
+<br>
 <img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/Database_Diagram.PNG" />
 <br>
 <hr />

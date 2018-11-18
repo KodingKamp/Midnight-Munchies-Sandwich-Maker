@@ -1,6 +1,6 @@
 # Midnight Munchies: Sandwich Maker - GUI Database Project for OOP Class
 <h2>Description</h2>
-Do you get midnight cravings but never know what snack to make? With Sandwich Maker, you won't have to spend an hour digging through your cabinets to find the perfect combination of foods that would satisfy your hunger. Create AWESOME almost realistic virtual sandwiches out of products you probably have in your kitchen. You'll be able to save your favored creations for later review; make sure you give it an awesome name!"
+Do you get midnight cravings but never know what snack to make? With Sandwich Maker, you won't have to spend an hour digging through your cabinets to find the perfect combination of foods that would satisfy your hunger. Create AWESOME almost realistic virtual sandwiches out of products you probably have in your kitchen. You'll be able to save your favored creations for later review; make sure you give it an awesome name!
 
 <h2>Overview</h2>
 <img src="https://github.com/KodingKamp/projectOOP/raw/master/src/images/MidnightMunchiesSandwichMaker.gif" />

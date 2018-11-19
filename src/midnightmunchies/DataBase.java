@@ -7,14 +7,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-// Class for DataBase Methods used to group all methods dealing with database interaction.
+/**
+ * Class for DataBase Methods used to group all methods dealing with database interaction.
+ **/
 public class DataBase {
 
-  //------- Variables ------
+  /**
+   * ------- Variables ------.
+   **/
   private static final String dbUrl = "jdbc:derby:lib/books";
   private static Connection connection = null;
 
-  // Method used to connect to the database, called from other methods in this class.
+  /**
+   * Method used to connect to the database, called from other methods in this class.
+   **/
   private static void connect() {
     try {
       connection = DriverManager.getConnection(
@@ -24,7 +30,9 @@ public class DataBase {
     }
   }
 
-  // Method used to disconnect from the database, if connected.
+  /**
+   * Method used to disconnect from the database, if connected.
+   **/
   public static void disconnect() {
     try {
       if (connection != null && !connection.isClosed()) {
@@ -35,7 +43,9 @@ public class DataBase {
     }
   }
 
-  // Method to execute an SQL statement
+  /**
+   * Method to execute an SQL statement.
+   **/
   public static void executeQuery(String sqlStatment) {
     //--- Local variable ---
     Statement statement = null;
@@ -61,7 +71,9 @@ public class DataBase {
     }
   }
 
-  // Method to execute SQL statement with expected Result Set type return value.
+  /**
+   * Method to execute SQL statement with expected Result Set type return value.
+   **/
   public static ResultSet executeQueryResultSet(String sqlQuery) {
     //--- Local Variables ---
     Statement statement = null;

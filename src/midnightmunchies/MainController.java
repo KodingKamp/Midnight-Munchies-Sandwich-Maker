@@ -21,7 +21,9 @@ import javafx.stage.Stage;
 
 public class MainController {
 
-  //-------Variables-------
+  /**
+   * -------Variables-------.
+   **/
   private ArrayList sandwiches = new ArrayList();
   private int arrayListIndex = 0;
   private ResultSet resultSet;
@@ -48,8 +50,10 @@ public class MainController {
 
   //------- Methods -------
 
-  // This method is called when the "New Creation" button is clicked.
-  // The scene is changed to the createScene loaded over the same stage
+  /**
+   * This method is called when the "New Creation" button is clicked. The scene is changed to the
+   * createScene loaded over the same stage.
+   **/
   @FXML
   void createNewBtnClicked() throws IOException {
     // disconnects from the database in case it is connected at time of call
@@ -60,8 +64,10 @@ public class MainController {
     stage.show();
   }
 
-  // This method toggles the visibility of the pane containing credits information and
-  // hides the Load Menu if it is visible.
+  /**
+   * This method toggles the visibility of the pane containing credits information and hides the
+   * Load Menu if it is visible.
+   **/
   @FXML
   void creditsBtnClicked() {
     creditsPane.setVisible(!creditsPane.isVisible());
@@ -70,8 +76,10 @@ public class MainController {
     }
   }
 
-  // This method is used as an alternate way to close the program and is called when
-  // the user clicked the exit button.
+  /**
+   * This method is used as an alternate way to close the program and is called when the user
+   * clicked the exit button.
+   **/
   @FXML
   void exitBtnClicked() {
     DataBase.disconnect();
@@ -79,8 +87,10 @@ public class MainController {
     System.exit(0);
   }
 
-  // This method toggles the visibility of the Load Menu and sets contained Image Views
-  // to respective values stores in the dataBase. This also hides the Credits pane if visible.
+  /**
+   * This method toggles the visibility of the Load Menu and sets contained Image Views to
+   * respective values stores in the dataBase. This also hides the Credits pane if visible.
+   **/
   @FXML
   void loadCreationsBtnClicked() {
     // Hide Credits pane
@@ -128,25 +138,31 @@ public class MainController {
     }
   }
 
-  // Using modulo to keep arrayListIndex within bounds of arrayList, first adding the
-  // arrayList size to keep arrayListIndex non-negative then subtracting 5 before modulo.
-  // This would allow the index to wrap to the back of the array if index was at 0.
+  /**
+   * Using modulo to keep arrayListIndex within bounds of arrayList, first adding the arrayList size
+   * to keep arrayListIndex non-negative then subtracting 5 before modulo. This would allow the
+   * index to wrap to the back of the array if index was at 0.
+   **/
   @FXML
   public void loadPrevious() {
     arrayListIndex = (arrayListIndex + sandwiches.size() - 5) % sandwiches.size();
     loadImages();
   }
 
-  // Increments arrayListIndex by 5 and modulo with arrayList size to
-  // keep index within bounds of arrayList and wraps index back to beginning.
+  /**
+   * Increments arrayListIndex by 5 and modulo with arrayList size to keep index within bounds of
+   * arrayList and wraps index back to beginning.
+   **/
   @FXML
   public void loadNext() {
     arrayListIndex = (arrayListIndex + 5) % sandwiches.size();
     loadImages();
   }
 
-  // This method is called by other methods in this class to fill the contents of the
-  // Load Menu pane with the values in sandwiches using the arrayListIndex variable.
+  /**
+   * This method is called by other methods in this class to fill the contents of the Load Menu pane
+   * with the values in sandwiches using the arrayListIndex variable.
+   **/
   @FXML
   private void loadImages() {
     loadName.setText(sandwiches.get(arrayListIndex).toString());
@@ -163,7 +179,9 @@ public class MainController {
     }
   }
 
-  // This method is called when the Delete button is clicked in the Load Menu pane.
+  /**
+   * This method is called when the Delete button is clicked in the Load Menu pane.
+   **/
   @FXML
   public void deleteBtnClicked() {
     // Prompts the user that they are about to delete a record from the database.
@@ -176,8 +194,10 @@ public class MainController {
     // from the SANDWICHES table.
     if (alert.getResult().getText().equals("OK")) {
       // Executes DELETE SQL statement to delete the record that matches the name in the textField.
-      DataBase.executeQuery("DELETE FROM SANDWICHES WHERE NAME='"
-          + sandwiches.get(arrayListIndex) + "'");
+      String query = String.format("DELETE FROM SANDWICHES WHERE NAME='%s'",
+          sandwiches.get(arrayListIndex));
+      System.out.println(query);
+      DataBase.executeQuery(query);
       System.out.println("Deleteing sandwich \"" + sandwiches.get(arrayListIndex) + "\".");
       // Remove the respective values from the sandwich ArrayList.
       for (int i = 0; i < 5; i++) {
@@ -214,7 +234,9 @@ public class MainController {
     }
   }
 
-  // Method called when ENTER key is pressed while editing name Text Field to update name in DB.
+  /**
+   * Method called when ENTER key is pressed while editing name Text Field to update name in DB.
+   **/
   @FXML
   public void renameSandwich(KeyEvent keyEvent) {
     if (keyEvent.getCode().toString().equals("ENTER")) {
@@ -238,8 +260,10 @@ public class MainController {
         alert.showAndWait();
       } else {
         // Executes statement to update Name field in DataBase.
-        DataBase.executeQuery("UPDATE SANDWICHES SET NAME = '" + loadName.getText()
-            + "' WHERE NAME = '" + sandwiches.get(arrayListIndex) + "'");
+        String query = String.format("UPDATE SANDWICHES SET NAME = '%s' WHERE NAME = '%s'",
+            loadName.getText(), sandwiches.get(arrayListIndex));
+        DataBase.executeQuery(query);
+        System.out.println(query);
         sandwiches.set(arrayListIndex, loadName.getText());
       }
       System.out.println("Name Changed");

@@ -243,21 +243,13 @@ public class MainController {
       // Checking to see if textField is empty or only contains whitespace and alerts user if true.
       if (loadName.getText().equals("") || loadName.getText().isEmpty()
           || loadName.getText().matches("\\s+")) {
-        Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Nameless");
-        alert.setHeaderText("Nameless Error");
-        alert.setContentText("You forgot to give your creation a name!");
-        alert.showAndWait();
+        alertEmptyName();
         // Restores name TextField to previous name of that record.
         loadName.setText(sandwiches.get(arrayListIndex).toString());
       } else if (loadName.getText().contains("'")) {
-        // Alerts user if an apostrophe (') exists in name field which causes errors when passed
-        // to execute method because SQL uses '.
-        Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Apostrophe");
-        alert.setHeaderText("Apostrophe Error");
-        alert.setContentText("Please refrain from using an apostrophe ( ' ) in the name.");
-        alert.showAndWait();
+        // Alerts user if an apostrophe (') exists in name field which causes errors when passed to
+        // execute method because SQL uses '.
+        alertApostrophe();
       } else {
         // Executes statement to update Name field in DataBase.
         String query = String.format("UPDATE SANDWICHES SET NAME = '%s' WHERE NAME = '%s'",
@@ -274,5 +266,27 @@ public class MainController {
       alert.setContentText("Your sandwich has been successfully renamed!");
       alert.showAndWait();
     }
+  }
+
+  /**
+   * Method used for alerting users that their text field contains an apostrophe.
+   **/
+  public static void alertApostrophe() {
+    Alert alert = new Alert(AlertType.ERROR);
+    alert.setTitle("Apostrophe");
+    alert.setHeaderText("Apostrophe Error");
+    alert.setContentText("Please refrain from using an apostrophe ( ' ) in the name.");
+    alert.showAndWait();
+  }
+
+  /**
+   * Method used for alerting users that their text field contains whitespaces or is empty.
+   **/
+  public static void alertEmptyName() {
+    Alert alert = new Alert(AlertType.ERROR);
+    alert.setTitle("Nameless");
+    alert.setHeaderText("Nameless Error");
+    alert.setContentText("You forgot to give your creation a name!");
+    alert.showAndWait();
   }
 }

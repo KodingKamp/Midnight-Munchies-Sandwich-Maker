@@ -126,26 +126,19 @@ public class CreateSceneController {
     // alerts user to provide characters in name field and clears name field.
     if (nameField.getText().equals("") || nameField.getText().isEmpty()
         || nameField.getText().matches("\\s+")) {
-      Alert alert = new Alert(AlertType.ERROR);
-      alert.setTitle("Nameless");
-      alert.setHeaderText("Nameless Error");
-      alert.setContentText("You forgot to give your creation a name!");
-      alert.showAndWait();
+      MainController.alertEmptyName();
       // In case user tried to enter only spaces, clear the text field so string does not
       // contain whitespace before it.
       nameField.setText("");
     } else if (nameField.getText().contains("'")) {
-      // Apostrophes are used in SQL statements so alerts user to remove them from the name field.
-      Alert alert = new Alert(AlertType.ERROR);
-      alert.setTitle("Apostrophe");
-      alert.setHeaderText("Apostrophe Error");
-      alert.setContentText("Please refrain from using an apostrophe ( ' ) in the name.");
-      alert.showAndWait();
+      // Alerts user if an apostrophe (') exists in name field which causes errors when passed to
+      // execute method because SQL uses '.
+      MainController.alertApostrophe();
     } else {
       // Executes SQL statement to insert a records into the Database's Sandwiches Table
       // and alerts user of its successful execution.
       String query = String.format("INSERT INTO SANDWICHES (NAME, TOPINDEX, MIDINDEX, "
-          + "BOTTOMINDEX, CHEESE) VALUES ('%s', %d, %d, %d, %b)", nameField.getText(), topIndex,
+              + "BOTTOMINDEX, CHEESE) VALUES ('%s', %d, %d, %d, %b)", nameField.getText(), topIndex,
           midIndex, bottomIndex, cheeseCheckBox.isSelected());
       System.out.println(query);
       DataBase.executeQuery(query);
